@@ -9,6 +9,7 @@ public class BoxController : MonoBehaviour
         if(other.CompareTag("Target"))
         {
             isOnTarget = true;
+            GameManager.instance.OnTraget();
         }
     }
 
@@ -17,6 +18,7 @@ public class BoxController : MonoBehaviour
         if(other.CompareTag("Target"))
         {
             isOnTarget = false;
+            GameManager.instance.OnTraget();
         }
     }
 }
